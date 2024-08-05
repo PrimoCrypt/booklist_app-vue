@@ -9,7 +9,7 @@ const handleBookClick = (id) => {
 
 <template>
   <div class="flex flex-col items-center mt-4">
-    <h1 class="text-white text-5xl font-extrabold my-5">Best Selling Books</h1>
+    <h1 class="text-white text-5xl font-extrabold my-5 text-center">Best Selling Books</h1>
     <div class="flex flex-col gap-8">
       <div :key="book.id" v-for="(book, index) in bookData">
         <Book :="{ ...book }" :myIndex="index" :handleBookClick="handleBookClick" />
